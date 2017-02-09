@@ -16,18 +16,12 @@
 
 		<div class="friends">
 			{{#each friends}}
-				<div class ="friend" class="img-responsive">
-					<img src="{{imageURL}}" .../>
-					<h3 class="name"> {{name}} </h3>
-					<p class="description"> {{description}} </p>
+				<div class ="friend">
+					<img src="{{imageURL}}" class="img-responsive img-rounded">
+					<a href="#" class="friendName">{{name}}</a>
+					<p class="friendDescription"> {{description}} </p>
 				</div>
 			{{/each}}
-		</div>
-
-		<div>
-			<img src="http://lorempixel.com/500/500/people">
-			<h3>Fake Friend</h3>
-			<p>All my friends are imaginary</p>
 		</div>
 
 		<form id="addFriendForm" role="form" method="get" action="/add">
@@ -48,5 +42,6 @@
 		<script src="js/bootstrap.js"></script>
 		
 	</body>
+
 </div>
 </html>
